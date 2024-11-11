@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class=" h-screen bg-c-lpink flex flex-col gap-2 justify-center items-center default  p-8">
+  <div class="background absolute top-0 -z-10 h-[40%] w-full"></div>
+  <div class="overflow-auto lg:w-[600px] bg-white mt-10 rounded-md gap-6 flex flex-col items-start p-6 shadow-md">
+    <div class="flex flex-row items-center gap-4">
+      <img src="./assets/images/icon-star.svg" alt="" class="w-6 h-6 lg:w-10 lg:h-10">
+      <h1 class="font-bold text-2xl lg:text-4xl ml-2 font-w-700">FAQs</h1>
+    </div>
+    <div class="w-full flex flex-col gap-2">
+      <div class="text-black  rounded-md  flex flex-row justify-between">
+        <p class="font-w-600 w-[80%]  hover:text-purple-500">What is Frontend Mentor, and how will it help me?</p>
+        <button id="btn-1" type="button" aria-expanded="false">
+          <img src="./assets/images/icon-plus.svg" class="w-6 h-6">
+        </button>
+      </div>
+      <div class="hidden" id="accordian-1">
+        <p class="paragraph-text text-slate-400">Frontend Mentor offers realistic coding challenges to help developers
+          improve their
+          frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+          all levels and ideal for portfolio building.</p>
+      </div>
+      <hr>
+    </div>
+    <div class="w-full flex flex-col gap-2">
+      <div class="text-black  rounded-md flex flex-row justify-between">
+        <p class="font-w-600 w-[80%] hover:text-purple-500 cursor-pointer ">Is Frontend Mentor free?</p>
+        <button id="btn-2" type="button" aria-expanded="false">
+          <img src="./assets/images/icon-plus.svg" class="w-6 h-6">
+        </button>
+      </div>
+      <div class="hidden" id="accordian-2">
+        <p class="paragraph-text text-slate-400"> Yes, Frontend Mentor offers both free and premium coding challenges,
+          with
+          the free
+          option providing access to a range of projects suitable for all skill levels.</p>
+      </div>
+      <hr>
+    </div>
+    <div class="w-full flex flex-col gap-2">
+      <div class="text-black rounded-md flex flex-row justify-between">
+        <p class="font-w-600 w-[80%] hover:text-purple-500 cursor-pointer ">Can I use Frontend Mentor projects in my
+          portfolio?</p>
+        <button id="btn-3" type="button" aria-expanded="false">
+          <img src="./assets/images/icon-plus.svg" class="w-6 h-6">
+        </button>
+      </div>
+      <div class="hidden" id="accordian-3">
+        <p class="paragraph-text text-slate-400">Yes, you can use projects completed on Frontend Mentor in your
+          portfolio.
+          It's an excellent
+          way to showcase your skills to potential employers!</p>
+      </div>
+      <hr>
+    </div>
+    <div class="w-full flex flex-col gap-2">
+      <div class="text-black rounded-md flex flex-row justify-between">
+        <p class="font-w-600 w-[80%] hover:text-purple-500 cursor-pointer ">How can I get help if I'm stuck on a
+          Frontend Mentor challenge?</p>
+        <button id="btn-4" type="button" aria-expanded="false">
+          <img src="./assets/images/icon-plus.svg" class="w-6 h-6">
+        </button>
+      </div>
+      <div class="hidden" id="accordian-4">
+        <p class="paragraph-text text-slate-400"> The best place to get help is inside Frontend Mentor's Discord
+          community.
+          There's a help
+          channel where you can ask questions and seek support from other community members.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">prathammhavale</a>.
+  </div>
+  <script src="./src/script.js"></script>
+</body>
+
+</html>
